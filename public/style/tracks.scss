@@ -1,0 +1,39 @@
+@import "variables";
+
+.tracks {
+  background-color: black;
+  color: $global-white;
+  text-align: center;
+  padding: 5px 0 5px 0;
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    padding: 5px 0 0 0;
+  }
+
+  .track-list {
+    font-size: 20px;  
+    padding: 10px 150px;
+
+    img {
+      width: 15%;
+      border-radius: 15px;
+      padding: 10px;
+    }
+
+    #health {
+      width: 350px;
+    }
+    #brand {
+      width: 350px;
+    }
+    #other {
+      width: 150px;
+    }
+    #piracy {
+      width: 150px;
+    }
+  }
+}

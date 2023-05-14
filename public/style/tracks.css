@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+.tracks {
+  background-color: black;
+  color: #fffffb;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+.tracks h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 5em;
+  font-weight: bolder;
+  padding: 5px 0 0 0;
+}
+.tracks .track-list {
+  font-size: 20px;
+  padding: 10px 150px;
+}
+.tracks .track-list img {
+  width: 15%;
+  border-radius: 15px;
+  padding: 10px;
+}
+.tracks .track-list #health {
+  width: 350px;
+}
+.tracks .track-list #brand {
+  width: 350px;
+}
+.tracks .track-list #other {
+  width: 150px;
+}
+.tracks .track-list #piracy {
+  width: 150px;
+}/*# sourceMappingURL=tracks.css.map */

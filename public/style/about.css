@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+.about {
+  background-color: #fffffb;
+  color: black;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  font-family: "Roboto", sans-serif;
+}
+.about h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 5em;
+  font-weight: bolder;
+  padding: 5px 0 0 0;
+}
+.about h2 span {
+  color: #888888;
+}
+.about p {
+  font-size: 2em;
+}/*# sourceMappingURL=about.css.map */

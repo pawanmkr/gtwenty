@@ -1,0 +1,26 @@
+@import "variables";
+
+.about {
+  background-color: $global-white;
+  color: black; 
+  text-align: center;
+  padding: 5px 0 5px 0;
+
+  font-family: "Roboto", sans-serif;
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    //border-bottom: 1px solid $grey;
+    padding: 5px 0 0 0;
+
+    span {
+      color: $grey;  
+    }
+  }
+
+  p {
+    font-size: 2em;
+  }
+}

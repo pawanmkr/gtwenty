@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  background-color: black;
+  font-size: 12px;
+}
+body hr {
+  border: none;
+  border-top: 0.1px solid #888888;
+}
+body header {
+  background-color: rgb(0, 0, 0);
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .cu {
+  margin: 0;
+  display: flex;
+  height: 6vh;
+}
+body header .cu .more {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 15px;
+}
+body header .cu .more img {
+  width: 75px;
+  margin: 2.5px 2.5px;
+}
+body header navigation {
+  width: 100%;
+}
+body header navigation .menu-item {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2em;
+  color: #888888;
+}
+body header navigation .menu-item li {
+  list-style-type: none;
+  cursor: pointer;
+}
+body header navigation .menu-item li:hover {
+  color: #d6412d;
+}
+body header .g20 img {
+  height: 6vh;
+}
+body .hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+}
+body .hero .left {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Apply the animation to the image */
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body .hero .left img {
+  width: 50%;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+body .hero .right {
+  color: #fffffb;
+  width: 50%;
+  text-align: center;
+}
+body .hero .right .counter #name {
+  color: #fffffb;
+  font-family: "Roboto", sans-serif;
+  font-size: 4em;
+  font-weight: bolder;
+}
+body .hero .right .counter p {
+  font-size: 1.4em;
+  color: #888888;
+}
+body .hero .right .counter #counter {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  font-weight: bolder;
+  background: linear-gradient(to right, #F12711, #F5AF19, #29ABE2, #843CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 0;
+}
+body .hero .right .register-btn button {
+  font-size: 3em;
+  padding: 10px 25px;
+  border: none;
+  background-color: #d6412d;
+  color: #fffffb;
+}
+body .hero .right .register-btn button :hover {
+  cursor: pointer;
+}
+body .country-strip {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 0 0;
+}
+body .country-strip .hero-title {
+  background-color: white;
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+body .country-strip .hero-title h2 {
+  margin: 0 0 10px 0;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+body .country-strip .flags {
+  display: flex;
+  height: 4vh;
+  animation: marquee 10s linear infinite;
+  animation-iteration-count: infinite;
+}/*# sourceMappingURL=home.css.map */
