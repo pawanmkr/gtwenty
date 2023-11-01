@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const trackImages = document.querySelectorAll('.track-list img');
 
   // create an object that maps track IDs to their details
-  const trackDetails = {
+  const trackDetails: { [key: string]: string } = {
     software: 'Details for the software track.',
     health: 'Details for the health track.',
     piracy: 'Details for the piracy track.',
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // loop through each image and add a mouseover event listener
-  trackImages.forEach(image => {
+  trackImages.forEach((image: HTMLImageElement) => {
     image.addEventListener('mouseover', () => {
       // create the overlay element
       const overlay = document.createElement('div');
@@ -38,12 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
       overlay.style.height = `${imageRect.height}px`;
 
       // append the overlay to the image parent element
-      image.parentNode.appendChild(overlay);
+      image.parentNode?.appendChild(overlay);
     });
 
     // add a mouseout event listener to remove the overlay
     image.addEventListener('mouseout', () => {
-      const overlay = image.parentNode.querySelector('.overlay');
+      const overlay = image.parentNode?.querySelector('.overlay');
       if (overlay) {
         overlay.remove();
       }
